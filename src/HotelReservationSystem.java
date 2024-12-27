@@ -46,10 +46,8 @@ public class HotelReservationSystem {
                 }
             }
 
-        }catch (SQLException e){
+        }catch (SQLException | InterruptedException e){
             System.out.println(e.getMessage());
-        }catch (InterruptedException e){
-            e.printStackTrace();
         }
 
     }
